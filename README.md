@@ -28,7 +28,8 @@
 
 
 ##  How to run/launch?
-* From root Directory run cmd :  'mvnw clean spring-boot:run'
+* Checkout or download the project
+* From 'book-store-service' Directory run cmd :  'mvnw clean spring-boot:run'
 
 ### Launch
 * http://localhost:8080
