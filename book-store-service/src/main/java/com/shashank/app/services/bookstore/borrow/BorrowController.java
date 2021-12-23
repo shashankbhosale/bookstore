@@ -54,25 +54,4 @@ public class BorrowController {
     }
 
 
-    @GetMapping("/borrowed/all/books/list")
-    List<Book> allBorrowed(){
-        return borrowRepository.getBorrowedList();
-    }
-
-    @GetMapping("/borrowed/all/books/size")
-    Long allBorrowedCount(){
-        return borrowRepository.getBorrowedCount();
-    }
-
-    @GetMapping("/patron/borrowed/{patronId}")
-    List<Book> patronBorrowed(@PathVariable Long patronId){
-        return borrowRepository.getBorrowedList();
-    }
-
-    @GetMapping("/patron/borrowed/{patronId}/size")
-    Long patronBorrowedCount(@PathVariable Long patronId){
-        return borrowRepository.getBorrowedCount();
-    }
-
-
 }
